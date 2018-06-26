@@ -2,6 +2,13 @@ language: node_js
 node_js: node
 cache:
   directories:
-    - node_modules
+  - node_modules
 env:
-  - CI=true
+- CI=true
+deploy:
+  provider: heroku
+  api_key:
+    secure: zRmheqdQmiEe1FSG652tN/L2B2at8BcC9ezXUXT9KlCfc3K/wF88V/7UmWUcv9cqr2iIk4UjHVgk6iclk17crErWduHMm8NMujxQGISOcydv7pFp0LfMqR7lq45q/BhRfe3cFqPjEHmzf+3h9Mpx+hSUZxc2CEGc9TtpdeJGmbao8ACFRuj5uBwYn+VLUgdL0lzgR58oiDa5M+PIlqz9+3XROwsl+uGuOMk2tBPJuvQtLeeY9G7K0sKNDPzVGgEPwaiy1Sm6mMCqpT73yyEDBrk+wmHVU4YOBZmfgcKMp6T8x+ZfmQJutowyMzELjRdrncYRVybIwtfmJKVFGtJoYQ3+dV43bhcSS0VoZJjALV1ui9EhyW5jPuOxtOGzw9rOXhM7d4A5NxxSynqHFz6qwnCyrK+zCfTzdDkem/AhQwl8r5qeuUXBDhW7zbRu5WawDvCEjFa6gE0g+NmYU2eoyzzy4goKPuFRpIDMAFq8KR5+ubjCL50MpKB5Rs0gpKvwda/nNI1xfwACEo41n5zkZfMC3URxWnXNKmsHtBYPatMiMPmbpHCiFg4DR6OV/d9Ft6NMHJu7XUmIbp/prvNy+9ptla+tSw9m9DH+kxdEowW26uUEwafH/9l3R/osHao/isjdkDUm+3O7GcuHxgAeeDO1RXH34BIQKRfz9RSE4ws=
+  app: tranquil-caverns-28314
+  on:
+    repo: rrogerthat/react-hot-cold-testing
